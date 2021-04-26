@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>RESOLVER EL CUBO DE RUBIK</title>
+<div style="text-align: center;"><b><header>METODO PARA RESOLVER EL CUBO RUBIK</header></b></div>
+</head>
+<body>
+<div style="text-align: center;"><img src="../imagenes/1.jpg" width="368" height="366" alt=""></div>
+
+<figcaption><b><i>¿COMO RESOLVER EL CUBO RUBIK?</i></b></figcaption></div>
+<p>Muchas de las personas creen que es de "genios" resolver este curioso puzzle, pero a diferencia de lo que muchos creen es muy facil. Existen infinidad de metodos para resolverlo, pero el que les enseñaré, es el metodo por reducción o también conocido como el metodo principiante, ya que es el más facil de entender.</p>
+<div style="text-align: center;"><img src="../imagenes/2.jpg" width="688" height="387" alt=""></div>
+<p>Antes de empezar con el metodo hay varias cosas que debes saber, como por ejemplo que cada giro de cada cara, le coresponde una letra, a esto se le conoce como <b>NOTACIÓN</b> y cuando realizas una secuencia de giros se le conoce como un algoritmo, pero tranquilo si se te hace dificil de entender, mas adelante lo entenderas ya ejecutando el metodo.</p>
+<div style="text-align: center;"><p><b>Notación del cubo de rubik:</b></p></div>
+<div style="text-align: center;"><img src="../imagenes/3.jpeg" width="729" height="343" alt=""></div>
+<p>Para hacer mas facil esta parte podemos decir que no importa el color de la cara del cubo cuando hablamos de notación, mas bien la pocición, es decir que la letra de la cara es impuesta dependiendo cual te esté mirando a ti, por ejemplo, la cara verde tiene la letra <b>"F"</b> la letra "F" se le da por (Front): Capa Frontal, eso quiere decir que estamos suponiendo que la cara que tienes enfrente de ti es la verde, pero esto cambia si tenes en frente cualquier otra cara, ya que las letras siguen estando igual por que te determinan la posición de las mismas, como vez, no importa el color, si no la pocición.</p>
+<p><b>*U (Up):</b> Capa Superior</p>
+<p><b>*D (Down):</b> Capa Inferior</p>
+<p><b>*R (Right):</b> Capa Derecha</p>
+<p><b>*L (Left):</b> Capa Izquierda</p>
+<p><b>*F (Front):</b> Capa Frontal</p>
+<p><b>*B (Back):</b> Capa Trasera</p>
+<p>Una vez entendido esto, otra cosa muy importante son las piezas del cubo, existen 3 piezas fundamentales, las cuales son: <b>los centros</b>, <b>las esquinas </b>y <b>las aristas</b></p>
+<b><p>Piezas que conforman el cubo de rubik:</p></b>
+<div style="text-align: center;"><img src="../imagenes/4.jpeg" width="502" height="249" alt=""></div>
+<p><b>*Centros:</b> los centros de un cubo de rubik son piezas que nunca se mueven, es decir, no varían su posición.  Éstos están fijos en el centro de cada cara y marcan el color de la misma. Cada cubo tiene 6 centros.
+</p>
+<p><b>*Aristas:</b> el cubo 3×3 tiene 12 aristas. Se sitúan entre los vértices y están formadas por dos colores.</p>
+<p><b>*Esquinas:</b> tendremos un total de 8 esquinas y cada una se compone de tres colores diferentes.</p>
+&nbsp;
+<p>Pasando ya la practica de como armar el cubo, explicaré a armar la primer cara, como pudiste notar, armaremos el cubo por capas, ya que el nombre del metodo es reducción, y eso quiere decir que iremos reducioendo el armado mediante capas ya que es mas facil de esta manera.</p>
+<p><b><i><div style="text-align: center;">CRUZ BLANCA:</div></i></b></p>
+<p>En esta primera capa vamos a comenzar por la cara blanca (aunque, como ya se ha mencionado,se puede comenzar por cualquier cara). Lo primero que tenemos que hacer es una cruz blanca, teniendo en cuenta que tendremos que respetar el color de los centros adyacentes. Este paso no requiere ningún algoritmo específico, es algo intuitivo que solo necesita un poco de práctica para entender cómo se mueven las diferentes piezas por el cubo. En la siguiente ilustración se refleja lo que tenemos que conseguir.</p>
+<div style="text-align: center;"><img src="../imagenes/4.png" width="590" height="356" alt=""></div>
+<b><div style="text-align: center;"><p>Aunque es algo sencillo te dejamos algunos casos prácticos para que veas los movimientos que tienes que hacer.</p></div></b>
+<div style="text-align: center;"><img src="../imagenes/a1.jpeg" width="1050" height="349" alt=""></div>
+<div style="text-align: center;"><b><p>RESOLVER ESQUINAS</p></b></div>
+<p>Una vez tengamos la cruz blanca tendremos que insertar las esquinas que tienen el color blanco en su lugar correcto para terminar la primera capa. Es decir, en este paso únicamente prestaremos atención a aquellas esquinas que tengan una de sus caras de color blanco. Este paso  también es muy sencillo.Solo tenemos cinco posibles situaciones y podremos solucionarlas con el mismo algoritmo.</p>
+<p>Con la cruz blanca hacia arriba, buscamos alguna esquina con color blanco, pudiendo obtener alguno de los siguientes casos:</p>
+<p><b>1)</b> Primer caso. En la capa inferior tenemos una esquina en la que el color blanco se queda mirando hacia nosotros. Para ponerla en su posición correcta, lo primero que tenemos que hacer es colocar la esquina justo debajo del lugar donde la queremos insertar y hacer los cuatro sencillos pasos que podemos ver en la primera ilustración.</p>
+<p><b>2)</b> Segundo caso. En esta ocasión el color blanco se queda mirando hacia abajo. Igual que en caso anterior, ponemos la esquina justo debajo de donde la queremos insertar y realizamos el mismo algoritmo que antes pero, en esta ocasión, lo tenemos que repetir tres veces para que la esquina se coloque en su posición correcta.</p>
+<p><b>3)</b> Tercer caso. En esta situación la esquina está en su posición correcta, pero mal orientada. Para cambiar esto tenemos que aplicar el mismo algoritmo que en los casos anteriores, pero en esta ocasión lo repetiremos cuatro veces, para que la esquina quede bien colocada.</p>
+<p><b>4)</b> Cuarto caso. Nos encontramos casi lo mismo que en el  tercer caso; la diferencia es que el color blanco no está de frente a nosotros, sino que se queda a la derecha. Para arreglar esta pieza llevaremos a cabo el mismo algoritmo, pero lo repetiremos solo dos veces.</p>
+<p><b>5)</b> Quinto caso. Se corresponde con algo muy parecido al caso uno, pero en esta ocasión el blanco, en vez de mirarnos a nosotros, se queda mirando hacia la derecha. En esta situación haremos un algoritmo aún más sencillo. También lo podemos resolver con el mismo algoritmo que en los otros casos pero tendríamos que aplicarlo cinco veces.</p>
+<div style="text-align: center;"><img src="../imagenes/a2.jpeg" width="782" height="603" alt=""></div>
+</body>
+</html>
